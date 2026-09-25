@@ -10,7 +10,7 @@ The project is based on chakilams/simple-nginx-app, vendored into this repositor
 
 
 
-Two POSIX-compliant shell scripts live under scripts/: sysinfo.sh (reports user, UID, hostname, kernel, ISO-8601 date, disk usage, memory usage, and Docker daemon status) and healthcheck.sh (accepts a target URL as $1, defaulting to http://localhost:8080, and exits 0/1 based on whether it receives a 200 response). Both begin with #!/bin/sh and set -euo pipefail, and are marked executable in Git via git update-index --chmod=+x. Both pass ShellCheck with no errors (only the expected SC3040 warning regarding pipefail in POSIX sh).
+Two POSIX-compliant shell scripts live under scripts/: sysinfo.sh (reports user, UID, hostname, kernel, ISO-8601 date, disk usage, memory usage, and Docker daemon status) and healthcheck.sh (accepts a target URL as $1, defaulting to http://localhost:8080, and exits 0/1 based on whether it receives a 200 response). Both begin with #!/bin/bash and set -euo pipefail, and are marked executable in Git via git update-index --chmod=+x. Both pass ShellCheck with no errors (only the expected SC3040 warning regarding pipefail in POSIX sh).
 
 
 
