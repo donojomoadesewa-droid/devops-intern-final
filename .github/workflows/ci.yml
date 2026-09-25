@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: ShellCheck
-        uses: ludeeus/action-shellcheck@master
+        uses: ludeeus/action-shellcheck@2.0.0
         with:
           scandir: "./scripts"
 
@@ -53,7 +53,7 @@ jobs:
 
       - name: Run container
         run: |
-          docker run -d -p 8080:8080 --name nginx-test nginx-app:test
+          docker run -d -p 8080:8080 --name sleep 3
 
       - name: Health check
         run: |
