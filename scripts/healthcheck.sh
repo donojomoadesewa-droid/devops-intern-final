@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -euo pipefail
 URL="${1:-http://localhost:8080}"
 STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$URL" || echo "000")
