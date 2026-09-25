@@ -53,7 +53,7 @@ jobs:
 
       - name: Run container
         run: |
-          docker run -d -p 8080:8080 --name sleep 3
+          docker run -d -p 8080:8080 --name nginx-test nginx-app:test
 
       - name: Health check
         run: |
