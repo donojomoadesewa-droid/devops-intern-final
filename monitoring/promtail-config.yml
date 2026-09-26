@@ -15,4 +15,6 @@ scrape_configs:
           - localhost
         labels:
           job: nginx
+          container: nginx-test
+          service: nginx-app
           _path_: /var/log/nginx/*.log

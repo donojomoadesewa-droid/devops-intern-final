@@ -11,5 +11,5 @@ services:
     image: grafana/promtail:3.5.0
     volumes:
       - ./promtail-config.yml:/etc/promtail/config.yml
-      - /var/log:/var/log
+      - /c/Users/donoj/nginx-logs:/var/log/nginx
     command: -config.file=/etc/promtail/config.yml
